@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Smoke-check STAR SLOP in a headless browser: boot a dev server, start a solo
+// Smoke-check GOO CREW in a headless browser: boot a dev server, start a solo
 // run, force a fight, and capture screenshots (menu, combat, close-up).
-//   node star-slop/scripts/screenshot.mjs
-// Outputs to star-slop/screenshots/ (gitignored). Set CHROME to override the
+//   node scripts/screenshot.mjs
+// Outputs to screenshots/ (gitignored). Set CHROME to override the
 // browser binary; defaults to the Playwright chromium if present.
 
 import puppeteer from "puppeteer-core";
@@ -13,7 +13,7 @@ import { fileURLToPath } from "url";
 import { existsSync } from "fs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.join(__dirname, "..", "..");
+const ROOT = path.join(__dirname, "..");
 const OUT = path.join(__dirname, "..", "screenshots");
 const PORT = 5177;
 const CHROME =
@@ -48,7 +48,7 @@ page.on("console", (m) => {
   if (m.type() === "error" && !m.text().includes("404")) errors.push("CONSOLE: " + m.text().slice(0, 300));
 });
 
-await page.goto(`http://localhost:${PORT}/star-slop/`, { waitUntil: "networkidle0", timeout: 30000 });
+await page.goto(`http://localhost:${PORT}/`, { waitUntil: "networkidle0", timeout: 30000 });
 await new Promise((r) => setTimeout(r, 2000));
 await page.screenshot({ path: `${OUT}/menu.png` });
 

@@ -12,7 +12,7 @@ import { NetSession } from "./net/session.js";
 import { createHostServer, createClientTransport, makeRoomCode } from "./net/peer.js";
 
 // ============================================================================
-// STAR SLOP — an FTL-like with a seamless goo crew. Solo or 2-player co-op.
+// GOO CREW — an FTL-like with a seamless goo crew. Solo or 2-player co-op.
 // Host simulates; the partner streams commands and renders snapshots.
 // ============================================================================
 
@@ -384,7 +384,7 @@ function showMenu(status = "") {
   wrap.className = "modalwrap";
   wrap.innerHTML = `
     <div class="modal" style="text-align:center">
-      <h1 class="title-logo"><span class="a">STAR</span> <span class="b">SLOP</span></h1>
+      <h1 class="title-logo"><span class="a">GOO</span> <span class="b">CREW</span></h1>
       <div class="tagline">Keep the soup flying. An FTL-ish co-op roguelike crewed by seamless goo.</div>
       <div class="menubtns">
         <button class="btn accent" id="btn-solo">▶ SOLO RUN</button>

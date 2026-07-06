@@ -1,4 +1,4 @@
-# 🍜 STAR SLOP
+# 🍜 GOO CREW
 
 A totally different game living in this repo: an **FTL-like co-op roguelike**
 built with Three.js, crewed by procedurally generated **seamless goo

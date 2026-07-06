@@ -1,5 +1,5 @@
 {
-  "name": "star-slop",
+  "name": "goo-crew",
   "version": "0.1.0",
   "description": "An FTL-like co-op roguelike in Three.js, crewed by seamless procedural goo characters. Solo or 2-player peer-to-peer, in the browser.",
   "type": "module",

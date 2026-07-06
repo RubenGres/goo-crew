@@ -4,7 +4,7 @@ import { Peer } from "peerjs";
 // Host claims a peer id derived from a 4-letter room code; client dials it.
 // (Same battle-tested pattern as the train game, different room namespace.)
 
-const ROOM_PREFIX = "starslop-";
+const ROOM_PREFIX = "goocrew-";
 
 function peerIdForRoom(code) {
   return ROOM_PREFIX + code.toLowerCase();
